@@ -1,56 +1,60 @@
-/* This is the syntax for a CSS comment. */
-
-/* Typically you put all of your general element styles at the top. */
-
 body {
 	background-color: #eeeeee;
 }
 
-h1 {
-	color: #111111;
-}
-
-h2 {
-
-}
-
 p {
+        width:90%;
+        padding-left: 15%;
+        width: 75%;
+}
+
+header h1 {
+    color:red;
 
 }
 
-img {
-
-}
-
-
-/* Container or module styles probably come next. */
-
-header {
-
+header h2 {
+    color:blue;
 }
 
 nav {
-
+    float:left;
+    width: 5%;
+    padding-right: 15%;
+    
 }
+    
 
-nav a {
-
+@media screen and (max-width: 600px) {
+    
+    body {
+        padding: 3%;
 }
-
-section {
-
+    
+    h1, h2 {
+    text-align: center;
 }
-
-aside {
-
-}
-
-footer {
-
-}
-
-/* Class and ID styles come last because they are the most specific. */
-
-#copyright {
-
+    nav {
+        width:100%;
+        padding-right:5%;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        padding-left:0;
+        
+    }
+    
+    nav li {
+        display: inline;
+        margin-right: 10px;
+        text-align: center;
+    }
+    
+    p {
+        clear: left;
+        margin-left: 0;
+        padding-left:0;
+        width: 100%;
+    }
 }
